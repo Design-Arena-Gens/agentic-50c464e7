@@ -1,0 +1,31 @@
+:root{--bg:#0b1220;--panel:#0f172a;--text:#e2e8f0;--muted:#94a3b8;--brand:#22d3ee;--accent:#a78bfa;--ok:#10b981;--warn:#f59e0b;--danger:#ef4444}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0}
+body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(1200px 600px at 20% -20%,#192642 0%,#0b1220 50%),var(--bg);color:var(--text);line-height:1.65}
+.container{max-width:980px;margin:0 auto;padding:0 20px}
+.site-header{position:sticky;top:0;z-index:10;background:rgba(11,18,32,0.8);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;color:var(--brand);text-decoration:none;letter-spacing:.3px}
+.nav a{color:var(--text);opacity:.85;margin-left:16px;text-decoration:none}
+.nav a:hover{opacity:1;color:var(--accent)}
+.content{padding:32px 0 64px}
+section{margin:28px 0}
+h1{font-size:36px;line-height:1.2;margin:12px 0 8px}
+h2{font-size:22px;margin:18px 0 8px;color:#cbd5e1}
+.lede{color:#cbd5e1;font-size:18px}
+.module-list{list-style:decimal;padding-left:20px}
+.module-list li{margin:10px 0}
+.module-list a{color:var(--brand);text-decoration:none;font-weight:600}
+.module-list a:hover{color:#7dd3fc}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:16px}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:12px}
+.control label{display:block;margin-bottom:6px;color:#cbd5e1;font-weight:600}
+.control input[type=range]{width:100%}
+.chart{width:100%;height:auto;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.04));border:1px solid rgba(255,255,255,0.06);border-radius:10px}
+.pred{margin-top:6px;color:#eab308;font-weight:600}
+.button{display:inline-block;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#0b1220;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:800}
+.site-footer{border-top:1px solid rgba(255,255,255,0.05);padding:18px 0;opacity:.8}
+ul{padding-left:18px}
+li{margin:6px 0}
+a{transition:color .15s ease}
+@media (max-width:640px){h1{font-size:28px}}
